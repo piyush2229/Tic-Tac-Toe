@@ -103,8 +103,15 @@ body {
 @media only screen and (max-width: 600px) {
     .game {
         width: 90%; /* Adjust game width for smaller screens */
+        max-width: none; /* Remove the maximum width restriction */
+        flex-wrap: wrap; /* Allow boxes to wrap onto new lines */
     }
     
+    .box {
+        width: 30%; /* Set the width to 30% for each box */
+    }
+}
+
     .box {
         width: 45%; /* Adjust box width for smaller screens */
     }
