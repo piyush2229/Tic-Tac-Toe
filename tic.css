@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.game {
+    width: 90%;
+    max-width: 400px; /* Limit maximum width for larger screens */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.box {
+    width: 30%;
+    height: 100px; /* Fixed height for the buttons */
+    padding: 20px;
+    border-radius: 15px;
+    border: none;
+    font-size: 25px;
+    font-family: monospace;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+    color: rgb(126, 102, 41);
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.box:hover {
+    background-color: #7bd79e;
+}
+
+#reset,
+#reset_new {
+    width: 200px; /* Fixed width for the buttons */
+    height: 50px; /* Fixed height for the buttons */
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: auto; /* Center the button horizontally */
+    margin-right: auto; /* Center the button horizontally */
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: darkkhaki;
+    color: rgb(101, 98, 89);
+    transition: background-color 0.3s, color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#reset:hover,
+#reset_new:hover {
+    background-color: cornflowerblue;
+}
+
+#reset_new {
+    padding: 1rem;
+    color: aquamarine;
+    background-color: coral;
+    border: none;
+    text-align: center;
+    border-radius: 1rem;
+    margin-top: 10px; /* Add some top margin */
+}
+
+
+.main-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+#msg {
+    color: chocolate;
+    font-size: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .game {
+        width: 90%; /* Adjust game width for smaller screens */
+    }
+    
+    .box {
+        width: 45%; /* Adjust box width for smaller screens */
+    }
+}
