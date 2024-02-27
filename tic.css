@@ -99,18 +99,21 @@ body {
     display: none;
 }
 
-/* Media query for smaller screens */
+
 @media only screen and (max-width: 600px) {
     .game {
         width: 90%; /* Adjust game width for smaller screens */
         max-width: none; /* Remove the maximum width restriction */
-        flex-wrap: wrap; /* Allow boxes to wrap onto new lines */
+        display: grid; /* Use CSS grid for the layout */
+        grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+        gap: 10px; /* Add gap between boxes */
     }
     
     .box {
-        width: 30%; /* Set the width to 30% for each box */
+        width: 100%; /* Each box occupies the full width of its grid cell */
     }
 }
+
 
     .box {
         width: 45%; /* Adjust box width for smaller screens */
