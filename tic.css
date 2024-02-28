@@ -35,7 +35,7 @@ body {
     border: none;
     font-size: 25px;
     font-family: monospace;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.4);
+    box-shadow: 2rem 2rem 2rem rgba(5, 32, 42, 0.4);
     color: rgb(126, 102, 41);
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
