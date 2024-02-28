@@ -107,7 +107,12 @@ body {
 
     .box {
         width: calc(33.33% - 20px);
-        height:calv(33.33% - 20px);/* Adjust box width for smaller screens */
+        height: calc(33.33% - 20px); /* Adjust box height for smaller screens */
         /* Subtracting 20px for the gap between boxes */
     }
+
+    .game {
+        height: 320px; /* Adjust height of the game container for smaller screens */
+    }
 }
+
