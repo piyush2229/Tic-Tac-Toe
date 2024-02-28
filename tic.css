@@ -104,8 +104,9 @@ body {
     .game {
         width: 90%; /* Adjust game width for smaller screens */
     }
-    
+
     .box {
-        width: 25%; /* Adjust box width for smaller screens */
+        width: calc(33.33% - 20px); /* Adjust box width for smaller screens */
+        /* Subtracting 20px for the gap between boxes */
     }
 }
